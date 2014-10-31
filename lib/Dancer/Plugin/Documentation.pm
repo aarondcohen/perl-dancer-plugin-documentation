@@ -2,7 +2,7 @@ package Dancer::Plugin::Documentation;
 
 =head1 NAME
 
-Dancer::Plugin::Documentation - register documentation for a route
+Dancer::Plugin::Documentation - register documentation for routes
 
 =cut
 
@@ -354,21 +354,21 @@ attached to both.
 
 =back
 
-=head1 ACKNOWLEDGEMENTS
-
-This module is brought to you by L<Shutterstock|http://www.shutterstock.com/>
-(L<@ShutterTech|https://twitter.com/ShutterTech>).  Additional open source
-projects from Shutterstock can be found at
-L<code.shutterstock.com|http://code.shutterstock.com/>.
-
 =head1 AUTHOR
 
 Aaron Cohen, C<< <aarondcohen at gmail.com> >>
 
+=head1 ACKNOWLEDGEMENTS
+
+This module was made possible by L<Shutterstock|http://www.shutterstock.com/>
+(L<@ShutterTech|https://twitter.com/ShutterTech>).  Additional open source
+projects from Shutterstock can be found at
+L<code.shutterstock.com|http://code.shutterstock.com/>.
+
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-Dancer-Plugin-Documentation at rt.cpan.org>, or through
-the web interface at L<https://github.com/aarondcohen/Dancer-Plugin-Documentation/issues>.  I will
+the web interface at L<https://github.com/aarondcohen/perl-dancer-plugin-documentation/issues>.  I will
 be notified, and then you'll automatically be notified of progress on your bug as I make changes.
 
 =head1 SUPPORT
@@ -383,11 +383,11 @@ You can also look for information at:
 
 =item * Official GitHub Repo
 
-L<https://github.com/aarondcohen/Dancer-Plugin-Documentation>
+L<https://github.com/aarondcohen/perl-dancer-plugin-documentation>
 
 =item * GitHub's Issue Tracker (report bugs here)
 
-L<https://github.com/aarondcohen/Dancer-Plugin-Documentation/issues>
+L<https://github.com/aarondcohen/perl-dancer-plugin-documentation/issues>
 
 =item * CPAN Ratings
 
