@@ -1,1 +1,15 @@
 runtime: perl518
+
+env:
+    PERL_CARTON_MIRROR: "http://cpan.shuttercorp.net"
+
+prove: |
+  if [[ -n "${ROCK_ARGS}" ]]; then
+    # This if statement allows you to say "rock [prove|test] path/to/Some/Moose/Test.pm"
+    # for a single filename ending in .pm  -- this is very useful for integrating with an IDE.
+    # n.b. this will mess you up if you mix .t and .pm and stuff, it's kidna fragile.
+    TEST_AUTHOR=1 exec prove ${PERL_TEST_INC} -r -l -v ${ROCK_ARGS}
+  else
+    TEST_AUTHOR=1 exec prove ${PERL_TEST_INC} -r -l -v t
+  fi
+

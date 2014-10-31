@@ -13,6 +13,7 @@ Makefile.old
 _build/
 blib/
 cover_db/
+cpanfile.snapshot
 inc/
 local/
 nytprof.out

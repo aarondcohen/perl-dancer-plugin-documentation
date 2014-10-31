@@ -2,12 +2,12 @@ package TestApp;
 use Dancer (':syntax');
 use Dancer::Plugin::Documentation;
 
-documentation 'overview',
+document_route 'overview',
 get '/' => sub {
-	return [Dancer::Plugin::Documentation->get_documentation];
+	return [documentation];
 };
 
-documentation "invalid",
+document_route "invalid",
 any ['get', 'post'] => '/foo' => sub {};
 
 true;

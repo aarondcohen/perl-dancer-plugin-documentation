@@ -2,20 +2,34 @@ package TestApp;
 use Dancer (':syntax');
 use Dancer::Plugin::Documentation;
 
-documentation 'overview',
+document_route 'overview',
 get '/' => sub {
-	return [Dancer::Plugin::Documentation->get_documentation];
+	return [documentation(%{params()})];
 };
+
+document_section 'bars',
+	'where we drink';
+
+document_section 'foos',
+	'few and fool';
 
 prefix '/v1';
 
-documentation "create foo",
+document_route "create foo",
 post '/foo' => sub {};
 
-documentation "fetch foo",
+document_route "fetch foo",
 get '/foo/:id' => sub {};
 
-documentation "find foo",
+document_route "find foo",
 get '/foo' => sub {};
+
+document_section 'bazs',
+	'who knew?';
+
+document_route "dunno",
+post '/baz' => sub {};
+
+document_section '', "disabling sections...shouldn't show";
 
 true;
